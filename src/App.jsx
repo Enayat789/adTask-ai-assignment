@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact/Contact";
 import MainFeature from "./Components/Features/MainFeature";
 import Introduction from "./Components/Introduction";
 import Navbar from "./Components/Navbar/Navbar";
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <ContactBtn />
       <Testinomials />
+      <Contact />
     </>
   );
 }
