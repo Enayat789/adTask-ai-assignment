@@ -1,5 +1,8 @@
+// import AnimatedCard from "./Components/AnimatedCart";
+import BottomAdTask from "./Components/BottomAdTask";
 import Contact from "./Components/Contact/Contact";
 import MainFeature from "./Components/Features/MainFeature";
+import Footer from "./Components/Footer/Footer";
 import Introduction from "./Components/Introduction";
 import Navbar from "./Components/Navbar/Navbar";
 import Services from "./Components/Services/Services";
@@ -22,6 +25,9 @@ function App() {
       <ContactBtn />
       <Testinomials />
       <Contact />
+      <BottomAdTask />
+      {/* <AnimatedCard /> */}
+      <Footer />
     </>
   );
 }

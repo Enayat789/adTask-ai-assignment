@@ -28,15 +28,20 @@ const AllServices = () => {
                 />
               </div>
               {/* main content */}
-              <div className="w-full h-[100%] flex flex-col items-center justify-between ">
-                <div className="w-full h-full flex items-end justify-center">
+              <div className="w-full relative h-[100%] flex flex-col items-center justify-between ">
+                <img
+                  src="Rectangle5.png"
+                  alt="Background"
+                  className="absolute inset-0 w-full h-full object-cover opacity-70"
+                />
+                <div className="w-full relative h-full flex items-end justify-center">
                   <img
                     src={service.icon}
                     alt={service.title}
                     className="w-auto max-w-[70px]"
                   />
                 </div>
-                <div className="flex flex-col py-8 px-6 gap-2 text-sm text-center">
+                <div className="flex flex-col relative py-8 px-6 gap-2 text-sm text-center">
                   <h1 className="font-extrabold">{service.title}</h1>
                   <p className="font-extralight">{service.description}</p>
                 </div>

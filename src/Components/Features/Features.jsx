@@ -7,9 +7,15 @@ import thunderImg from "../../assets/Images//thunderImg.png";
 
 const Features = () => {
   return (
-    <div className="flex w-full h-auto items-center justify-center my-8 gap-6 ">
+    <div className="flex w-full h-auto relative items-center justify-center my-8 gap-6 ">
       {/* first section */}
-      <div className="flex flex-col bg-gradient-to-t from-gray-800 to-gray-900 items-center justify-between w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+        <img
+          src="Ellipse5.png"
+          alt=""
+          className="absolute top-0 w-full left-0"
+        />
+
         <div className="">
           <img src={infiniteCircle} alt="infiniteCircle" />
         </div>
@@ -25,7 +31,12 @@ const Features = () => {
       {/* middle section */}
       <div className="flex flex-col items-center justify-between w-[26%] h-[75vh]">
         {/* 1st */}
-        <div className="flex flex-col w-full h-[48%] items-center justify-between bg-gradient-to-t from-gray-800 to-gray-900 border  border-gray-700 rounded-2xl">
+        <div className="flex flex-col w-full h-[48%] relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 border  border-gray-700 rounded-2xl">
+          <img
+            src="Ellipse5.png"
+            alt=""
+            className="absolute top-0 w-full left-0"
+          />
           <div className=" relative flex items-center pt-4 justify-center w-full h-[55%]">
             <div className=" relative p-2 border border-gray-700 rounded-2xl">
               <img src={mlCircle} alt="mlCircle" />
@@ -48,7 +59,8 @@ const Features = () => {
         </div>
 
         {/* 2nd */}
-        <div className="flex flex-col w-full h-[48%] items-center justify-between bg-gradient-to-t from-gray-800 to-gray-900  border-gray-700 rounded-2xl">
+        <div className="flex flex-col w-full h-[48%] relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900  border-gray-700 rounded-2xl">
+          <img src="Ellipse5.png" alt="" className="absolute top-0 left-0" />
           <div className="flex items-center pt-4 justify-center w-full h-[55%] gap-4 ">
             <img src={staticsImg} alt="statics-Img" />
             <img src={pieChart} alt="pie-chart" />
@@ -64,7 +76,12 @@ const Features = () => {
         </div>
       </div>
       {/* last section */}
-      <div className="flex flex-col bg-gradient-to-t from-gray-800 to-gray-900 items-center justify-between w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col relative bg-gradient-to-tl  from-gray-800 to-gray-900 items-center justify-between w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+        <img
+          src="Ellipse5.png"
+          alt=""
+          className="absolute top-0 w-full left-0"
+        />
         <div className=" w-full h-full flex items-center justify-center">
           <img src={thunderImg} alt="img" />
         </div>
