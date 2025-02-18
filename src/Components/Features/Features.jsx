@@ -37,11 +37,20 @@ const Features = () => {
             alt=""
             className="absolute top-0 w-full left-0"
           />
-          <div className=" relative flex items-center pt-4 justify-center w-full h-[55%]">
-            <div className=" relative p-2 border border-gray-700 rounded-2xl">
-              <img src={mlCircle} alt="mlCircle" />
+          <div className="relative  flex items-center pt-4 justify-center w-full h-[55%]">
+            <div className="relative flex w-[40%] h-[90%] px-2 py-2 border border-gray-600 rounded-2xl">
+              <img
+                src="Vector (13).png"
+                alt=""
+                className="absolute w-[70%] transform origin-center animate-spin-slow"
+              />
+              <img
+                src="Vector (13).png"
+                alt=""
+                className="absolute w-[50%] p-2 right-0 bottom-0 transform origin-center animate-spin-slow"
+              />
             </div>
-            <div className="absolute w-[35%] flex flex-col items-center right-0">
+            <div className="absolute w-[30%] flex flex-col items-center right-0">
               <p className="text-xs bg-gradient-to-r from-white to-[#5C73AE] bg-clip-text text-transparent">
                 GEN AI Powered
               </p>

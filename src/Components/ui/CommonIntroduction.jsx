@@ -4,7 +4,7 @@ const CommonIntroduction = ({ heading, lastPara, content1, content2 }) => {
   return (
     <div className="flex w-full h-[50vh] relative flex-col items-center justify-center p-4 gap-8">
       <img
-        src="Rectangle5.png"
+        src="Ellipse 9.png"
         alt="Background"
         className="absolute inset-0 w-auto m-auto h-full object-cover opacity-70"
       />

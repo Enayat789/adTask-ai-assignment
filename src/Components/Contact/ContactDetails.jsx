@@ -5,7 +5,12 @@ import { CiLocationOn } from "react-icons/ci";
 
 const ContactDetails = () => {
   return (
-    <div className="w-[50%] h-full flex flex-col items-start justify-between">
+    <div className="w-[50%] h-full relative flex flex-col items-start justify-between">
+      <img
+        src="Ellipse 9.png"
+        alt="Background"
+        className="absolute -z-10 inset-0 w-full h-full object-cover opacity-80"
+      />
       <div className="flex justify-center items-start">
         <h2 className="text-5xl font-sans">
           Ask whatever you have

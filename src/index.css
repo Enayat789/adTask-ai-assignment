@@ -25,6 +25,53 @@ body {
   animation: scroll 25s linear infinite;
 }
 
+@keyframes moveBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-move-border {
+  animation: moveBorder 4s linear infinite;
+}
+/* wfw */
+.animate-border-crawl {
+  background: linear-gradient(
+    to right,
+    #6b7280,
+    transparent,
+    #6b7280
+  ); /* Adjust colors */
+  background-size: 200% 100%; /* Double the width for the animation */
+  animation: border-crawl 10s linear infinite; /* Adjust duration */
+}
+
+@keyframes border-crawl {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* spin */
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
