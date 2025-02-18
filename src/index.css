@@ -72,71 +72,294 @@ body {
 .animate-spin-slow {
   animation: spinSlow 8s linear infinite;
 }
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* lower mid */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes heightChange1 {
+  0% {
+    height: 91px;
   }
-  a:hover {
-    color: #747bff;
+  33% {
+    height: 91px;
   }
-  button {
-    background-color: #f9f9f9;
+  66% {
+    height: 67px;
   }
-} */
+  100% {
+    height: 27px;
+  }
+}
+@keyframes heightChange2 {
+  0% {
+    height: 48px;
+  }
+  33% {
+    height: 48px;
+  }
+  66% {
+    height: 91px;
+  }
+  100% {
+    height: 67px;
+  }
+}
+@keyframes heightChange3 {
+  0% {
+    height: 67px;
+  }
+  33% {
+    height: 67px;
+  }
+  66% {
+    height: 48px;
+  }
+  100% {
+    height: 91px;
+  }
+}
+@keyframes heightChange4 {
+  0% {
+    height: 27px;
+  }
+  33% {
+    height: 27px;
+  }
+  66% {
+    height: 67px;
+  }
+  100% {
+    height: 48px;
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-heightChange1 {
+  animation: heightChange1 3s ease-in-out infinite;
+  /* animation-delay: 2s; */
+  /* 2s delay before the animation starts */
+  animation-fill-mode: forwards;
+  /* Keep the final state until the next cycle */
+}
+
+.animate-heightChange2 {
+  animation: heightChange2 3s ease-in-out infinite;
+  /* animation-delay: 2s; */
+  animation-fill-mode: forwards;
+}
+
+.animate-heightChange3 {
+  animation: heightChange3 3s ease-in-out infinite;
+  /* animation-delay: 2s; */
+  animation-fill-mode: forwards;
+}
+
+.animate-heightChange4 {
+  animation: heightChange4 3s ease-in-out infinite;
+  /* animation-delay: 2s; */
+  animation-fill-mode: forwards;
+}
+
+/* thunder div */
+
+@keyframes moveInwardWithPause1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(20px, 40px) scale(0.8);
+  }
+
+  70% {
+    transform: translate(40px, 60px) scale(0.6);
+  }
+
+  100% {
+    transform: translate(60px, 80px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes moveInwardWithPause2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(-20px, 40px) scale(0.8);
+  }
+
+  70% {
+    transform: translate(-40px, 60px) scale(0.6);
+  }
+
+  100% {
+    transform: translate(-60px, 130px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes moveInwardWithPause3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(10px, -50px) scale(0.8);
+  }
+
+  70% {
+    transform: translate(30px, -70px) scale(0.6);
+  }
+
+  100% {
+    transform: translate(60px, -90px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes moveInwardWithPause4 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(-40px, -20px) scale(0.8);
+  }
+
+  70% {
+    transform: translate(-50px, -25px) scale(0.6);
+  }
+
+  100% {
+    transform: translate(-60px, -30px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes moveInwardWithPause5 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(-20px, -70px) scale(0.8);
+  }
+
+  70% {
+    transform: translate(-30px, -80px) scale(0.6);
+  }
+
+  100% {
+    transform: translate(-50px, -100px) scale(0);
+    opacity: 0;
+  }
+}
+
+.animate-moveInwardWithPause1 {
+  animation: moveInwardWithPause1 2s ease-in-out infinite;
+}
+
+.animate-moveInwardWithPause2 {
+  animation: moveInwardWithPause2 2s ease-in-out infinite;
+}
+
+.animate-moveInwardWithPause3 {
+  animation: moveInwardWithPause3 2s ease-in-out infinite;
+}
+
+.animate-moveInwardWithPause4 {
+  animation: moveInwardWithPause4 2s ease-in-out infinite;
+}
+
+.animate-moveInwardWithPause5 {
+  animation: moveInwardWithPause5 2s ease-in-out infinite;
+}
+
+/* for the left most div */
+
+@keyframes moveOutward {
+  0% {
+    transform: scale(0);
+    /* Initial size */
+    opacity: 1;
+    /* Fully visible */
+  }
+
+  25% {
+    transform: scale(1);
+    /* Initial size */
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(2);
+    /* Scales up to 2x its size */
+    opacity: 1;
+    /* Semi-transparent */
+  }
+
+  75% {
+    transform: scale(2.5);
+    /* Scales up to 2x its size */
+    opacity: 1;
+    /* Semi-transparent */
+  }
+
+  100% {
+    transform: scale(4);
+    /* Scales up further */
+    opacity: 0;
+    /* Fully invisible */
+  }
+}
+
+.animate-ellipse6 {
+  animation: moveOutward 3s ease-in-out infinite;
+  /* Infinite loop with smooth transition */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+    /* Start and end as invisible */
+  }
+
+  50% {
+    opacity: 1;
+    /* Fade in at the halfway point */
+  }
+}
+
+.vector-animation1 {
+  animation: fadeInOut 3s ease-in-out infinite;
+  animation-delay: 0s;
+  /* No delay, appears first */
+}
+
+.vector-animation2 {
+  animation: fadeInOut 2s ease-in-out infinite;
+  animation-delay: 1s;
+  /* Appears after 1 second */
+}
+
+.vector-animation3 {
+  animation: fadeInOut 2s ease-in-out infinite;
+  animation-delay: 1s;
+  /* Appears after 2 seconds */
+}

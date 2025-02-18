@@ -1,8 +1,6 @@
 import React from "react";
 import Features from "./Features";
-// import { TargetAudienceCard } from "./TargetAudienceCard";
 import Introduction from "../ui/CommonIntroduction";
-import LowerMid from "./LowerMid";
 
 const MainFeature = () => {
   return (
@@ -16,8 +14,6 @@ const MainFeature = () => {
         }
       />
       <Features />
-      {/* <LowerMid /> */}
-      {/* <TargetAudienceCard /> */}
     </>
   );
 };

@@ -1,24 +1,64 @@
 import React from "react";
 import infiniteCircle from "../../assets/Images/infiniteCircle.png";
-import mlCircle from "../../assets/Images/mlCircle.png";
 import pieChart from "../../assets/Images/pieChart.png";
-import staticsImg from "../../assets/Images/statisticsImg.png";
 import thunderImg from "../../assets/Images//thunderImg.png";
 
 const Features = () => {
   return (
     <div className="flex w-full h-auto relative items-center justify-center my-8 gap-6 ">
       {/* first section */}
-      <div className="flex flex-col relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+        {/* background images */}
         <img
           src="Ellipse5.png"
           alt=""
           className="absolute top-0 w-full left-0"
         />
 
-        <div className="">
-          <img src={infiniteCircle} alt="infiniteCircle" />
+        {/* Images circle */}
+        {/* <img src={infiniteCircle} alt="infiniteCircle" /> */}
+        <div className="flex flex-col relative items-center justify-center">
+          <img
+            src="Rectangle5.png"
+            alt=""
+            className="absolute h-[600px] w-[500px] mt-[50px]"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[-200px] vector-animation1"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[180px] mt-[-40px] vector-animation2"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[180px] mt-[250px] vector-animation3"
+          />
+          <img
+            src="Ellipse6.png"
+            alt=""
+            className="w-[395.32px] h-[395.32px] mt-[45.34px] opacity-25 relative"
+          />
+          <div className="flex flex-col justify-center items-center absolute mt-[120px]">
+            <img src="Ellipse20.png" alt="" className="w-[12px] h-[12px]" />
+            <img
+              src="Ellipse21.png"
+              alt=""
+              className="absolute animate-ellipse6 mt-[-100px]"
+            />
+            <img
+              src="radarCircle.png"
+              alt=""
+              className="ml-[-51px] mt-[-7px]"
+            />
+          </div>
         </div>
+
+        {/*  */}
         <div className="flex flex-col p-4 px-6 gap-2 text-sm">
           <h1 className="font-bold">Reach Target Audience</h1>
           <p className="font-extralight">
@@ -69,9 +109,37 @@ const Features = () => {
 
         {/* 2nd */}
         <div className="flex flex-col w-full h-[48%] relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900  border-gray-700 rounded-2xl">
-          <img src="Ellipse5.png" alt="" className="absolute top-0 left-0" />
+          {/* <img src="Ellipse5.png" alt="" className="absolute top-0 left-0" /> */}
           <div className="flex items-center pt-4 justify-center w-full h-[55%] gap-4 ">
-            <img src={staticsImg} alt="statics-Img" />
+            <div className="flex gap-4 relative items-end justify-center pb-2 w-[35%] h-[80%] border border-gray-600 rounded-2xl ">
+              <img
+                src="Ellipse5.png"
+                alt=""
+                className="absolute top-0 left-0 rounded-2xl"
+              />
+
+              <img
+                src="Rectangle 49.png"
+                alt=""
+                className="w-[14px] h-[91px] rounded-[14px] animate-heightChange1"
+              />
+              <img
+                src="Rectangle 50.png"
+                alt=""
+                className="w-[14px] h-[48px] rounded-[14px] animate-heightChange2"
+              />
+              <img
+                src="Rectangle 51.png"
+                alt=""
+                className="w-[14px] h-[67px] rounded-[14px] animate-heightChange3"
+              />
+              <img
+                src="Rectangle 52.png"
+                alt=""
+                className="w-[14px] h-[27px] rounded-[14px] animate-heightChange4"
+              />
+            </div>
+
             <img src={pieChart} alt="pie-chart" />
           </div>
           <div className="flex flex-col h-[40%] bg-gray-60 pb-6 px-8 pt-0 gap-2 text-sm">
@@ -84,6 +152,7 @@ const Features = () => {
           </div>
         </div>
       </div>
+
       {/* last section */}
       <div className="flex flex-col relative bg-gradient-to-tl  from-gray-800 to-gray-900 items-center justify-between w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
         <img
@@ -91,9 +160,52 @@ const Features = () => {
           alt=""
           className="absolute top-0 w-full left-0"
         />
-        <div className=" w-full h-full flex items-center justify-center">
-          <img src={thunderImg} alt="img" />
+        <div className="relative w-full h-full">
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[35px] mt-[70px] w-6 h-6 animate-moveInwardWithPause1"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[250px] mt-[20px] w-6 h-6 animate-moveInwardWithPause2"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[30px] mt-[270px] w-6 h-6 animate-moveInwardWithPause3"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[320px] mt-[170px] w-6 h-6 animate-moveInwardWithPause4"
+          />
+          <img
+            src="Vector(26).png"
+            alt=""
+            className="absolute ml-[240px] mt-[340px] w-6 h-6 animate-moveInwardWithPause5"
+          />
+
+          {/* Background Circles */}
+          <img
+            src="Ellipse6.png"
+            alt=""
+            className="w-[392px] h-[362px] mt-[49px]"
+          />
+          <img
+            src="Ellipse7.png"
+            alt=""
+            className="w-[266px] h-[266px] mt-[-310px] ml-[40px]"
+          />
+
+          <img
+            src={thunderImg}
+            alt=""
+            className="w-[139.8px] h-[223.71px] mt-[-250px] ml-[120px]"
+          />
         </div>
+
         <div className="flex flex-col p-4 px-4 gap-2 text-sm">
           <h1 className="font-bold">
             Intelligent Agents to Optimize your Reach
