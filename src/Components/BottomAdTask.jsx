@@ -11,12 +11,12 @@ const BottomAdTask = () => {
       />
       <div className="absolute z-10 inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-70"></div>
 
-      <div className=" relative w-full h-[20%] flex items-end justify-center text-8xl text-gray-700">
+      <div className=" relative w-full h-[20%] flex items-end justify-center text-3xl md:text-8xl text-gray-700">
         adTask.ai
       </div>
-      <div className=" relative w-2xl h-[60%] flex flex-col items-center justify-evenly">
+      <div className="relative w-auto md:w-2xl h-[60%] flex flex-col items-center justify-evenly">
         <div className="flex justify-center text-center">
-          <h2 className="text-5xl font-serif">
+          <h2 className=" md:text-5xl font-serif">
             Are you ready to boost
             <br />
             <span className="bg-gradient-to-r from-[#7687B5] via-[#91B0FF] to-[#E2E8F8] text-transparent bg-clip-text">
@@ -25,10 +25,10 @@ const BottomAdTask = () => {
           </h2>
         </div>
         <div className="flex flex-col w-full items-center gap-6">
-          <button className=" relative border z-10 w-[30%] border-gray-400 cursor-pointer bg-gradient-to-r from-gray-600 to-gray-700 text-lg font-light p-3 rounded-full">
+          <button className=" relative border z-10 md:w-[30%] border-gray-600 cursor-pointer bg-gradient-to-r from-gray-700 to-gray-800 text-lg font-light p-3 rounded-full">
             Start Free Trail
           </button>
-          <button className="relative border z-10 w-[30%] border-gray-400 cursor-pointer bg-gradient-to-r from-gray-600 to-gray-700 text-lg font-light p-3 rounded-full">
+          <button className="relative border z-10 md:w-[30%] border-gray-600 cursor-pointer bg-gradient-to-r from-gray-700 to-gray-800 text-lg font-light p-3 rounded-full">
             Schedule a Call
           </button>
         </div>

@@ -3,11 +3,11 @@ import WorkswithImages from "./WorkwithImages";
 
 const WorksWith = () => {
   return (
-    <div className=" w-full h-[50vh] flex flex-col items-center justify-center p-4 gap-4">
+    <div className="w-full h-[50vh] flex flex-col items-center justify-center p-4 gap-4">
       <div className="">
         <p>Adtask AI works with :</p>
       </div>
-      <div className="flex w-full h-[19vh] max-w-5xl items-center justify-between">
+      <div className="flex flex-wrap w-full h-[19vh] max-w-5xl items-center justify-between">
         {WorkswithImages.map((work, index) => (
           <div
             key={index}

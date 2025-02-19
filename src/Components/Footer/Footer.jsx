@@ -5,8 +5,8 @@ import { CiLocationOn } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="w-full h-[45vh] p-4 border-t border-t-gray-500 flex flex-col items-center justify-between">
-      <div className=" w-full h-full flex items-center justify-evenly gap-4">
-        <div className="w-[30%] flex flex-col gap-4">
+      <div className=" w-full h-full flex flex-col md:flex-row items-center justify-evenly gap-4">
+        <div className="md:w-[30%] flex flex-col gap-4">
           <h2 className="text-8xl font-sans">adTask.ai</h2>
 
           <div className=" flex flex-col h-auto gap-2 px-2 text-xs">

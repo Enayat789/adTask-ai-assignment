@@ -6,7 +6,7 @@ import ServicesList from "./ServicesList";
 const AllServices = () => {
   // console.log(ServicesList);
   return (
-    <div className="w-full h-[70vh] flex items-center justify-center p-4">
+    <div className="w-full h-auto md:h-[70vh] flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl h-full flex flex-col">
         {/* this div for the frame */}
         <div className=" w-full flex">

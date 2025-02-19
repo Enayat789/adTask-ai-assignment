@@ -1,22 +1,21 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
-import reacTangle from "/Rectangle2.png";
 
 const Introduction = () => {
   return (
-    <div className=" w-full max-w-7xl h-[70vh] m-auto relative flex flex-col items-center justify-evenly mt-6 p-4">
+    <div className="w-full  max-w-7xl h-[50vh] md:h-[70vh] m-auto relative flex flex-col items-center justify-between md:justify-evenly mt-6 p-4">
       {/* grid lines for background */}
-      <div className="absolute -z-10 inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-70"></div>
+      <div className="absolute -z-10 inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-80"></div>
       <img
         src="Rectangle5.png"
         alt="Background"
         className="absolute -z-10 inset-0 w-full h-full object-cover opacity-70"
       />
 
-      <div className="relative flex items-center p-4 px-6 gap-2 text-xs uppercase bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-2xl cursor-pointer">
+      <div className="relative w-[95%] md:w-auto z-10 flex items-center p-3 md:p-4 md:px-6 gap-2 text-xs md:text-xs uppercase bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-2xl cursor-pointer">
         <div className="absolute top-0 left-0 h-full w-[8px] bg-white opacity-10 animate-move -rotate-6" />
         <BsStars size={20} />
-        <span> Transform Your Digital Presence with AI Agents</span>
+        <span>Transform Your Digital Presence with AI Agents</span>
         <style>
           {`
                     @keyframes moveRight {
@@ -30,7 +29,7 @@ const Introduction = () => {
         </style>
       </div>
 
-      <h1 className="relative z-10 text-4xl md:text-9xl font-sans text-gray-300 transform transition-transform duration-800 ease-in-out hover:drop-shadow-2xl hover:scale-105">
+      <h1 className="relative z-10 text-4xl md:text-9xl font-sans text-gray-300 transform transition-transform duration-700 ease-in-out hover:drop-shadow-2xl hover:scale-105">
         adTask.ai
       </h1>
       <p className="max-w-3xl text-center relative">

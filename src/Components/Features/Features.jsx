@@ -5,9 +5,9 @@ import thunderImg from "../../assets/Images//thunderImg.png";
 
 const Features = () => {
   return (
-    <div className="flex w-full h-auto relative items-center justify-center my-8 gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:flex w-full h-auto relative items-center justify-center my-8 gap-6 ">
       {/* first section */}
-      <div className="flex flex-col relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-full md:w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
         {/* background images */}
         <img
           src="Ellipse5.png"
@@ -69,7 +69,7 @@ const Features = () => {
       </div>
 
       {/* middle section */}
-      <div className="flex flex-col items-center justify-between w-[26%] h-[75vh]">
+      <div className="flex flex-col items-center justify-between w-full md:w-[26%] h-[75vh]">
         {/* 1st */}
         <div className="flex flex-col w-full h-[48%] relative items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 border  border-gray-700 rounded-2xl">
           <img
@@ -154,7 +154,7 @@ const Features = () => {
       </div>
 
       {/* last section */}
-      <div className="flex flex-col relative bg-gradient-to-tl  from-gray-800 to-gray-900 items-center justify-between w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col relative bg-gradient-to-tl from-gray-800 to-gray-900 items-center justify-between w-full md:w-[26%] h-[75vh] border border-gray-700 rounded-2xl p-4">
         <img
           src="Ellipse5.png"
           alt=""
