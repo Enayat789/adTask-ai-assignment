@@ -3,7 +3,7 @@ import { BsStars } from "react-icons/bs";
 
 const Introduction = () => {
   return (
-    <div className="w-full  max-w-7xl h-[50vh] md:h-[70vh] m-auto relative flex flex-col items-center justify-between md:justify-evenly mt-6 p-4">
+    <div className="w-full max-w-7xl h-[50vh] md:h-[60vh] lg:h-[70vh] m-auto relative flex flex-col items-center justify-between md:justify-evenly mt-6 p-4">
       {/* grid lines for background */}
       <div className="absolute -z-10 inset-0 h-full w-full bg-[linear-gradient(to_right,#80808018_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-90"></div>
 
@@ -20,7 +20,7 @@ const Introduction = () => {
         className="absolute -z-10 inset-0 w-full h-full object-cover opacity-60"
       />
 
-      <div className="relative w-[95%] md:w-auto z-10 flex items-center p-3 md:p-4 md:px-6 gap-2 text-xs md:text-xs uppercase bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-2xl cursor-pointer">
+      <div className="relative w-auto z-10 flex items-center p-3 md:p-4 md:px-6 gap-2 text-xs md:text-xs uppercase bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-2xl cursor-pointer">
         {/* moving line from left to right */}
         <div className="absolute top-0 left-0 h-full w-[8px] bg-white opacity-10 animate-move -rotate-6" />
         <BsStars size={20} />
@@ -38,7 +38,7 @@ const Introduction = () => {
         </style>
       </div>
 
-      <h1 className="relative z-10 text-6xl md:text-9xl font-sans text-gray-400 transform transition-all duration-700 ease-in-out hover:[text-shadow:_0_4px_8px_#C7D7FF] ">
+      <h1 className="relative z-10 text-6xl sm:text-8xl md:text-9xl font-sans text-gray-600 transform transition-all duration-700 ease-in-out hover:[text-shadow:_0_4px_8px_#C7D7FF] hover:text-gray-500 ">
         adTask.ai
       </h1>
       <p className="max-w-3xl text-sm text-balance md:text-lg text-center relative">
