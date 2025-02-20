@@ -17,12 +17,12 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-70%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 25s linear infinite;
+  animation: scroll 7s linear infinite;
 }
 
 @keyframes moveBorder {
