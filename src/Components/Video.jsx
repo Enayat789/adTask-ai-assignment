@@ -4,12 +4,10 @@ import youtubeLogo from "/youtube-logo2.webp";
 const Video = () => {
   return (
     <div className="w-full h-auto p-2 pt-0 relative">
-      <div className="relative m-auto w-[95%] h-[27vh] md:h-[55vh] max-w-4xl overflow-hidde border-2 border-gray-600 flex flex-col items-center justify-center rounded-2xl">
+      <div className="relative m-auto w-[90%] h-[27vh] sm:w-[80%] sm:h-[32vh] md:w-[90%] md:h-[45vh] lg:h-[55vh] max-w-4xl overflow-hidde border-2 border-gray-600 flex flex-col items-center justify-center rounded-2xl">
         {/* <iframe src="" frameborder="0"></iframe> */}
-        {/* <div
-          className="absolute bg-red-400 inset-0 w-full h-full animate-move-border rounded-2xl bg-[conic-gradient(#ff0000_20deg, transparent 120deg)]
-        mask-image: radial-gradient(circle, transparent 55%, black 60%);"
-        ></div> */}
+
+        {/* animated background */}
         <div className="absolute -z-10 inset-0 w-full h-full">
           <div className="w-full h-full rounded-2xl animate-border-crawl" />
         </div>
