@@ -4,9 +4,9 @@ import thunderImg from "../../assets/Images//thunderImg.png";
 
 const Features = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:flex w-full h-auto relative items-center justify-evenly my-8 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:flex w-full h-auto relative items-center justify-evenly my-8 md:px-4 gap-6">
       {/* first section */}
-      <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[65vh] sm:w-[70%] md:w-[90%] md:h-[70vh] lg:w-[26%] lg:h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[65vh] sm:w-[70%] md:w-[100%] md:h-[70vh] lg:w-[100%] xl:max-w-[26%] lg:h-[75vh] border border-gray-700 rounded-2xl p-4">
         {/* background images */}
         <img
           src="Ellipse5.png"
@@ -66,9 +66,9 @@ const Features = () => {
       </div>
 
       {/* middle section */}
-      <div className="flex flex-col items-center justify-between w-full h-auto md:w-[90%] md:h-[70vh] gap-6 lg:w-[26%] lg:h-[75vh]">
+      <div className="flex flex-col md:flex-row md:order-last lg:order-none md:col-span-2 lg:flex-col items-center justify-between w-full h-auto md:w-full md:m-auto lg:m-0 md:h-[35vh] gap-6 lg:w-[100%] xl:max-w-[26%] lg:h-[75vh]">
         {/* middle  1st */}
-        <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[50vh] sm:w-[70%] md:w-full md:h-[48%] border border-gray-700 rounded-2xl p-4">
+        <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[50vh] sm:w-[70%] md:w-full md:h-full border border-gray-700 rounded-2xl p-4">
           <img
             src="Ellipse5.png"
             alt=""
@@ -106,7 +106,7 @@ const Features = () => {
         </div>
 
         {/* middle 2nd */}
-        <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[50vh] sm:w-[70%] md:w-full md:h-[48%] border border-gray-700 rounded-2xl p-4">
+        <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[50vh] sm:w-[70%] md:w-full md:h-full border border-gray-700 rounded-2xl p-4">
           <img
             src="Ellipse5.png"
             alt=""
@@ -137,7 +137,7 @@ const Features = () => {
             </div>
             <img src={pieChart} alt="pie-chart" />
           </div>
-          <div className="flex flex-col relative text-center md:h-[40%] md:text-start px-4 py-6 md:py-2 gap-2 md:text-sm">
+          <div className="flex flex-col relative text-center md:h-[40%] md:text-start px-4 py-6 md:py-2 lg:py-0 gap-2 md:text-sm">
             <h2 className="font-bold">Smart Marketing Insights</h2>
             <p className="font-extralight">
               Unlock actionable data to guide every decision. Stay ahead of
@@ -149,7 +149,7 @@ const Features = () => {
       </div>
 
       {/* last section */}
-      <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[65vh] sm:w-[70%] md:w-[90%] md:h-[70vh] xl:max-w-[26%] lg:h-[75vh] border border-gray-700 rounded-2xl p-4">
+      <div className="flex flex-col m-auto lg:m-0 relative overflow-hidden items-center justify-between bg-gradient-to-tl from-gray-800 to-gray-900 w-[95%] h-[65vh] sm:w-[70%] md:w-[100%] md:h-[70vh] lg:w-[100%] xl:max-w-[26%] lg:h-[75vh] border border-gray-700 rounded-2xl p-4">
         <img
           src="Ellipse5.png"
           alt=""
@@ -185,24 +185,17 @@ const Features = () => {
           />
 
           {/* Background Circles */}
-          <img
-            src="Ellipse6.png"
-            alt=""
-            className="w-[90%] m-auto h-full "
-            // mt-[49px]
-          />
+          <img src="Ellipse6.png" alt="" className="w-[90%] m-auto h-full " />
           <img
             src="Ellipse7.png"
             alt=""
             className=" w-[70%] h-[75%] absolute top-[15%] left-[15%] "
-            // mt-[-310px] ml-[40px] w-[266px] h-[296px]
           />
 
           <img
             src={thunderImg}
             alt=""
             className="absolute w-[50%] h-[50%] top-[25%] left-[30%]"
-            // ml-[120px] mt-[-250px] w-[139.8px] h-[223.71px]
           />
         </div>
 
